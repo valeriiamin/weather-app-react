@@ -1,0 +1,50 @@
+.boxInfo {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxItem {
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 200px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.boxItem:not(:last-child) {
+    margin-right: 15px;
+}
+
+.boxIcon {
+    margin-right: 15px;
+}
+
+.item h4 {
+    opacity: 0.6;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.item h3 {
+    font-size: 26px;
+}
+
+@media screen and (max-width: 768px) {
+    .boxInfo {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .boxItem {
+        margin: 0 15px 15px 0;
+    }
+}
+
+@media screen and (max-width: 654px) {
+    .boxItem {
+        margin: 0 15px 15px 15px;
+    }
+}
